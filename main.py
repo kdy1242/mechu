@@ -1,16 +1,19 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from tkinter import *
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Mechu:
+    def __init__(self):
+        self.init_GUI()
+
+    def init_GUI(self):
+        self.root = Tk()
+        self.root.title('메추')
+        self.root.geometry(f'800x500')
+        self.root.resizable(width=False, height=False)
+
+        if __name__ == '__main__':
+            self.root.mainloop()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    mechu_GUI = Mechu()
