@@ -3,7 +3,7 @@ import tkinter
 
 import pick
 import record
-import test1
+import test
 
 
 class Mechu:
@@ -35,7 +35,7 @@ class Mechu:
         pick.Pick(self.start)
 
     def test_move(self):
-        test1.Test1(self.start)
+        test.Test(self.start)
 
     def record_move(self):
         record.Record(self.start)
