@@ -1,7 +1,7 @@
-from tkinter import *
 import tkinter
 
 import pick
+import eat
 
 
 class Chicken:
@@ -20,28 +20,28 @@ class Chicken:
         self.title.place(x=600, y=80)
 
         # 메뉴버튼
-        self.menuBtn1 = tkinter.Button(self.menu, width=10, height=3, text="BBQ")
+        self.menuBtn1 = tkinter.Button(self.menu, width=10, height=3, text="BBQ", command=self.eat_move)
         self.menuBtn1.place(x=400, y=230)
 
-        self.menuBtn2 = tkinter.Button(self.menu, width=10, height=3, text="BHC")
+        self.menuBtn2 = tkinter.Button(self.menu, width=10, height=3, text="BHC", command=self.eat_move)
         self.menuBtn2.place(x=600, y=230)
 
-        self.menuBtn3 = tkinter.Button(self.menu, width=10, height=3, text="네네치킨")
+        self.menuBtn3 = tkinter.Button(self.menu, width=10, height=3, text="네네치킨", command=self.eat_move)
         self.menuBtn3.place(x=200, y=300)
 
-        self.menuBtn4 = tkinter.Button(self.menu, width=10, height=3, text="굽네치킨")
+        self.menuBtn4 = tkinter.Button(self.menu, width=10, height=3, text="굽네치킨", command=self.eat_move)
         self.menuBtn4.place(x=400, y=300)
 
-        self.menuBtn5 = tkinter.Button(self.menu, width=10, height=3, text="교촌치킨")
+        self.menuBtn5 = tkinter.Button(self.menu, width=10, height=3, text="교촌치킨", command=self.eat_move)
         self.menuBtn5.place(x=600, y=300)
 
-        self.menuBtn6 = tkinter.Button(self.menu, width=10, height=3, text="KFC")
+        self.menuBtn6 = tkinter.Button(self.menu, width=10, height=3, text="KFC", command=self.eat_move)
         self.menuBtn6.place(x=200, y=370)
 
-        self.menuBtn7 = tkinter.Button(self.menu, width=10, height=3, text="파파이스")
+        self.menuBtn7 = tkinter.Button(self.menu, width=10, height=3, text="파파이스", command=self.eat_move)
         self.menuBtn7.place(x=400, y=370)
 
-        self.menuBtn8 = tkinter.Button(self.menu, width=15, height=3, text="호식이(우호식아님)")
+        self.menuBtn8 = tkinter.Button(self.menu, width=15, height=3, text="호식이(우호식아님)", command=self.eat_move)
         self.menuBtn8.place(x=600, y=370)
 
         # back 버튼
@@ -52,3 +52,6 @@ class Chicken:
 
     def back_btn(self):
         pick.Pick(self.menu)
+
+    def eat_move(self):
+        eat.Eat(self.menu)

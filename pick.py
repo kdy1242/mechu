@@ -1,4 +1,3 @@
-from tkinter import *
 import tkinter
 
 import dessert
@@ -29,32 +28,32 @@ class Pick:
         self.menuBtn1.place(x=400, y=230)
 
         # 라면
-        self.menuBtn1 = tkinter.Button(self.pick, width=10, height=3, text="라면", command=self.ramen_move)
-        self.menuBtn1.place(x=600, y=230)
+        self.menuBtn2 = tkinter.Button(self.pick, width=10, height=3, text="라면", command=self.ramen_move)
+        self.menuBtn2.place(x=600, y=230)
 
         # 치킨
-        self.menuBtn1 = tkinter.Button(self.pick, width=10, height=3, text="치킨", command=self.chicken_move)
-        self.menuBtn1.place(x=200, y=300)
+        self.menuBtn3 = tkinter.Button(self.pick, width=10, height=3, text="치킨", command=self.chicken_move)
+        self.menuBtn3.place(x=200, y=300)
 
         # 고기
-        self.menuBtn1 = tkinter.Button(self.pick, width=10, height=3, text="고기", command=self.meat_move)
-        self.menuBtn1.place(x=400, y=300)
+        self.menuBtn4 = tkinter.Button(self.pick, width=10, height=3, text="고기", command=self.meat_move)
+        self.menuBtn4.place(x=400, y=300)
 
         # 일식
-        self.menuBtn1 = tkinter.Button(self.pick, width=10, height=3, text="일식", command=self.japanese_move)
-        self.menuBtn1.place(x=600, y=300)
+        self.menuBtn5 = tkinter.Button(self.pick, width=10, height=3, text="일식", command=self.japanese_move)
+        self.menuBtn5.place(x=600, y=300)
 
         # 중식
-        self.menuBtn1 = tkinter.Button(self.pick, width=10, height=3, text="중식", command=self.chinese_move)
-        self.menuBtn1.place(x=200, y=370)
+        self.menuBtn6 = tkinter.Button(self.pick, width=10, height=3, text="중식", command=self.chinese_move)
+        self.menuBtn6.place(x=200, y=370)
 
         # 기타
-        self.menuBtn1 = tkinter.Button(self.pick, width=10, height=3, text="기타", command=self.other_move)
-        self.menuBtn1.place(x=400, y=370)
+        self.menuBtn7 = tkinter.Button(self.pick, width=10, height=3, text="기타", command=self.other_move)
+        self.menuBtn7.place(x=400, y=370)
 
         # 분식/야식/디저트
-        self.menuBtn1 = tkinter.Button(self.pick, width=15, height=3, text="분식/야식/디저트", command=self.dessert_move)
-        self.menuBtn1.place(x=600, y=370)
+        self.menuBtn8 = tkinter.Button(self.pick, width=15, height=3, text="분식/야식/디저트", command=self.dessert_move)
+        self.menuBtn8.place(x=600, y=370)
 
         # back 버튼
         self.backButton = tkinter.Button(self.pick, width=75, height=75, borderwidth=0, command=self.back_btn)

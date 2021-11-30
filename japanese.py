@@ -1,6 +1,6 @@
-from tkinter import *
 import tkinter
 
+import eat
 import pick
 
 
@@ -20,28 +20,28 @@ class Japanese:
         self.title.place(x=600, y=80)
 
         # 메뉴버튼
-        self.menuBtn1 = tkinter.Button(self.menu, width=10, height=3, text="초밥")
+        self.menuBtn1 = tkinter.Button(self.menu, width=10, height=3, text="초밥", command=self.eat_move)
         self.menuBtn1.place(x=400, y=230)
 
-        self.menuBtn2 = tkinter.Button(self.menu, width=10, height=3, text="돈부리")
+        self.menuBtn2 = tkinter.Button(self.menu, width=10, height=3, text="돈부리", command=self.eat_move)
         self.menuBtn2.place(x=600, y=230)
 
-        self.menuBtn3 = tkinter.Button(self.menu, width=10, height=3, text="참치회")
+        self.menuBtn3 = tkinter.Button(self.menu, width=10, height=3, text="참치회", command=self.eat_move)
         self.menuBtn3.place(x=200, y=300)
 
-        self.menuBtn4 = tkinter.Button(self.menu, width=10, height=3, text="소바")
+        self.menuBtn4 = tkinter.Button(self.menu, width=10, height=3, text="소바", command=self.eat_move)
         self.menuBtn4.place(x=400, y=300)
 
-        self.menuBtn5 = tkinter.Button(self.menu, width=10, height=3, text="라멘")
+        self.menuBtn5 = tkinter.Button(self.menu, width=10, height=3, text="라멘", command=self.eat_move)
         self.menuBtn5.place(x=600, y=300)
 
-        self.menuBtn6 = tkinter.Button(self.menu, width=10, height=3, text="우동")
+        self.menuBtn6 = tkinter.Button(self.menu, width=10, height=3, text="우동", command=self.eat_move)
         self.menuBtn6.place(x=200, y=370)
 
-        self.menuBtn7 = tkinter.Button(self.menu, width=10, height=3, text="장어덮밥")
+        self.menuBtn7 = tkinter.Button(self.menu, width=10, height=3, text="장어덮밥", command=self.eat_move)
         self.menuBtn7.place(x=400, y=370)
 
-        self.menuBtn8 = tkinter.Button(self.menu, width=15, height=3, text="오코노미야끼")
+        self.menuBtn8 = tkinter.Button(self.menu, width=15, height=3, text="오코노미야끼", command=self.eat_move)
         self.menuBtn8.place(x=600, y=370)
 
         # back 버튼
@@ -52,3 +52,6 @@ class Japanese:
 
     def back_btn(self):
         pick.Pick(self.menu)
+
+    def eat_move(self):
+        eat.Eat(self.menu)
