@@ -14,7 +14,7 @@ class Test:
         self.pickBg = tkinter.Label(image=self.bg)
         self.pickBg.place(x=-2, y=-2)
 
-        self.title = tkinter.Label(self.test, text="매운거땡기시나요?", font=30)
+        self.title = tkinter.Label(self.test, text="매운거땡기시\n나요?", font=('맑은고딕', 30))
         self.title.place(x=400, y=80)
 
         # yes or no
