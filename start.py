@@ -2,7 +2,6 @@ from tkinter import *
 import tkinter
 
 import pick
-import record
 import test
 
 
@@ -27,18 +26,11 @@ class Mechu:
         self.menuBtn = tkinter.Button(self.start, text="골라보기", command=self.pick_move, width=30, repeatdelay=20)
         self.menuBtn.place(x=330, y=350)
 
-        # 기록보기버튼
-        self.menuBtn = tkinter.Button(self.start, text="기록보기", command=self.record_move, width=30, repeatdelay=20)
-        self.menuBtn.place(x=330, y=390)
-
     def pick_move(self):
         pick.Pick(self.start)
 
     def test_move(self):
         test.Test(self.start)
-
-    def record_move(self):
-        record.Record(self.start)
 
     def play(self):
         self.start.mainloop()

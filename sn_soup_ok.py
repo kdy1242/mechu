@@ -13,7 +13,7 @@ class SNSoupOk:
         self.pickBg = tkinter.Label(image=self.bg)
         self.pickBg.place(x=-2, y=-2)
 
-        self.title = tkinter.Label(self.test, text="라멘, 설렁탕, 된장찌개,\n 우동, 사리곰탕라면 중에서 골라드셔보십시오", font=30)
+        self.title = tkinter.Label(self.test, text="라멘, 설렁탕, 된장찌개,\n 우동, 사리곰탕 중에서 골라드셔보십시오", font=30)
         self.title.place(x=200, y=120)
 
         # home 버튼

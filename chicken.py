@@ -41,7 +41,7 @@ class Chicken:
         self.menuBtn7 = tkinter.Button(self.menu, width=10, height=3, text="파파이스", command=self.eat_move)
         self.menuBtn7.place(x=400, y=370)
 
-        self.menuBtn8 = tkinter.Button(self.menu, width=15, height=3, text="호식이(우호식아님)", command=self.eat_move)
+        self.menuBtn8 = tkinter.Button(self.menu, width=15, height=3, text="호식이", command=self.eat_move)
         self.menuBtn8.place(x=600, y=370)
 
         # back 버튼
